@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascrpt.js"></script>
+</head>
+
+<body>
+    <!-- <p id="demo"></p> -->
+    <p id="result">Result</p>
+    Num1: <input type="number" id="num1">
+    <br> Num2: <input type="number" id="num2">
+    <br>
+    <input type="button" value="submit" onclick="Sum()">
+</body>
+<script>
+    /*alert()
+                                    document.write()
+                                    console.log();
+                                    innerHTML
+                                    document.getElementById()*/
+
+    document.write("<br>");
+    document.write("<br>");
+    var Name = "Ali";
+    var Family = "Ahmadi";
+    document.write(Name + " " + Family);
+
+    var names = ["Ali", "Reza", "Sara", "Zahra"];
+    document.write("<br>");
+    document.write(names[0]);
+    document.write("<br>");
+    document.write(names.length);
+    document.getElementById('demo').innerHTML = names;
+    var y = document.getElementById('demo');
+    y.innerHTML = names;
+
+    var myArray = new Array("B", "C", "A");
+    document.write("<br>");
+    myArray[0] = "F";
+    var x = myArray.sort();
+    console.log(x);
+
+
+    var person = ["Ali", "Ahmadi", 30]
+    document.write("<br>");
+    document.write("Name is: " + person[0] + " Family: " + person[1], " Age: " + person[2]);
+</script>
+
+</html>
